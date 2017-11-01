@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Julian's Portfolio</title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700|Libre+Franklin:400,400i,700"
+          rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!--Simpele navbar, plus titel.-->
+    <h1>Julian's Portfolio</h1>
+    <nav>
+        <!--Zodat Document outline niet gaat klagen.-->
+        <h2 class="verbergdit">Navigatie</h2>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!--Foto met tekst.-->
+    <div class="BigPicture">
+        <!--Deze foto dient als een aantrekkingspunt voor de bezoeker.-->
+        <img src="img/desk.png" alt="Julian Web Solutions">
+        <h2>Vragen? Opmerkingen? Een klus?</h2>
+    </div>
+    <!--Formulier voor commentaar. Als ik eenmaal bekend ben met PHP kan ik dit werkend maken.-->
+    <h3>Laat hier uw bericht achter.</h3>
+    <form action="success.html" method="get" id="commentform">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required/>
+        <label for="email">Email:</label>
+        <input type="text" id="email"/>
+        <label>Gender:</label>
+        <!--Geen enkel idee waarom deze radiobuttons niet willen connecten aan een label... ik heb meerdere dingen geprobeerd, inclusief stackexchange. Ik neem aan dat ik hiervoor PHP moet kennen.-->
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <textarea id="comment" form="commentform">Enter text here...</textarea>
+        <button type="submit">Submit</button>
+</main>
+<footer>
+    <p>Copyright © 2017 Julian Web Solutions. All rights reserved.</p>
+</footer>
+</body>
+</html>
